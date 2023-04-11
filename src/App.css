@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 .home-bg{
   background-image: url(../src/Assests/homebg.jpg);
@@ -12,12 +13,43 @@
 }
 /* search bar css */
 
-.search-bar-size{
+.position-search{
   position: absolute;
   margin: 0;
-  width: 50%;
-  top: 30%;
   left: 50%;
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
+}
+.search-bar-size{
+  top: 30%;
+  width: 45%;
+}
+
+/* suggestion box */
+.sug-box-container{
+  position: absolute;
+  top: 40%;
+  width: 50%;
+  left: 50%;
+  transform: translate(-50%,-10%);
+   
+}
+.sug-box-wrapper{
+  box-shadow: 1px 1px 10px 1px rgb(154, 154, 154); 
+  background-color: #fff;
+  padding: 1em 0.2em;
+}
+.latest-trends{
+  margin-bottom: 10px;
+}
+.latest-trends h6{
+  font-size: 12px;
+}
+.trending-outfit img{
+  object-fit: contain;
+  width: 100%;
+  height: 8em;
+}
+.outfit-title h6{
+ font-size: 14px;
 }
