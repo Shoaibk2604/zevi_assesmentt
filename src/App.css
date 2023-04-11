@@ -26,6 +26,9 @@
 }
 
 /* suggestion box */
+.product-five{
+  width: 20% !important;
+}
 .sug-box-container {
   position: absolute;
   top: 40%;
@@ -45,12 +48,19 @@
   font-size: 12px;
 }
 .trending-outfit img {
-  object-fit: contain;
+  object-fit: cover;
   width: 100%;
-  height: 8em;
+  height: 10em;
 }
 .outfit-title h6 {
   font-size: 14px;
+}
+.link-title{
+  text-decoration: none;
+  color: rgb(26, 26, 26);
+}
+.link-title:hover{
+  color: black;
 }
 /* product page search bar */
 
@@ -94,12 +104,16 @@
   font-size: 1.2em;
   right: 0.4em;
   cursor: pointer;
-  color: red;
+  color: white;
+}
+
+#wish-btn-color{
+  color: red !important;
 }
 .product-btn{
   position: absolute;
 display: flex;
-top: 120%;
+top: 130%;
 transition: all ease-in-out 0.2s;
 width: 100%;
 background-color: rgba(0, 0, 255, 0.472);
@@ -131,4 +145,42 @@ width: 100%;
 .offer-price{
  color:  rgba(0, 0, 255, 0.806);
  font-weight: 500;
+}
+
+/*MEDIA QUERY TAB  */
+@media (max-width:786px) {
+  .product-five{
+    width: 33.33333% !important;
+  }
+  .search-bar-size{
+    width: 80%;
+  }
+  .sug-box-container{
+    width: 90%;
+  }
+  .product-search{
+    width: 85%;
+  }
+  .only-product-three{
+    width: 33.3333%;
+  }
+  .text-short{
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+}
+/* MEDIA QUERY MOBILE */
+@media (max-width:450px){
+  .product-five{
+    width: 33.3333% !important;
+  }
+  .only-product-three{
+    width: 50%;
+  }
+  .trending-outfit img {
+    object-fit: cover;
+    height: 5em;
+  }
+
 }
