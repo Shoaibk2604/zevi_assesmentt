@@ -1,11 +1,16 @@
-import logo from './logo.svg';
-import './App.css';
-import HomeLayout from './container/home/homeLayout';
-
+import "./App.css";
+import HomeLayout from "./container/home/homeLayout";
+import { Route, Routes } from "react-router";
+import ProductLayout from "./container/productpage/productLayout";
 function App() {
   return (
     <div className="App">
-      <HomeLayout/>
+      <Routes>
+        <Route path="/" element={<HomeLayout />} />
+      </Routes>
+      <Routes>
+        <Route path="/productpage" element={<ProductLayout/>} />
+      </Routes>
     </div>
   );
 }

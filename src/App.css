@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  scroll-behavior: smooth;
+  /* scroll-behavior: smooth; */
 }
 .home-bg{
   background-image: url(../src/Assests/homebg.jpg);
@@ -52,4 +52,28 @@
 }
 .outfit-title h6{
  font-size: 14px;
+}
+/* product page search bar */
+
+.product-search{
+  position: relative;
+  top: 10%;
+  width: 50%;
+  left: 50%;
+  transform: translate(-50%,40%);
+  margin: 1.5em 0em;
+}
+.search-result{
+  margin-top: 3em;
+}
+/* rating css */
+.checkClass{
+  display: flex;
+}
+.checkClass label{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 0.3em;
+  margin-bottom: 0.2em;  
 }
