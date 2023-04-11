@@ -94,7 +94,7 @@
   font-size: 1.2em;
   right: 0.4em;
   cursor: pointer;
-  color: rgb(229, 28, 28);
+  color: red;
 }
 .product-btn{
   position: absolute;
