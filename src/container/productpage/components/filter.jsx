@@ -52,23 +52,23 @@ const Filter = () => {
       <div class="accordion-body" style={{borderBottom:"0.1px solid lightgrey"}}>
       <div className='checkClass'>
         <input type="checkbox" name="rating5" id="rating5" />
-        <label htmlFor="rating5"><AiFillStar/><AiFillStar/><AiFillStar/><AiFillStar/><AiFillStar/> </label>
+        <label htmlFor="rating5"><AiFillStar className='checked'/><AiFillStar className='checked'/><AiFillStar className='checked'/><AiFillStar className='checked'/><AiFillStar className='checked'/> </label>
         </div>
       <div className='checkClass'>
         <input type="checkbox" name="rating4" id="rating4" />
-        <label htmlFor="rating4"><AiFillStar/><AiFillStar/><AiFillStar/><AiFillStar/><AiOutlineStar/> </label>
+        <label htmlFor="rating4"><AiFillStar className='checked'/><AiFillStar className='checked'/><AiFillStar className='checked'/><AiFillStar className='checked'/><AiOutlineStar/> </label>
         </div>
       <div className='checkClass'>
         <input type="checkbox" name="rating3" id="rating3" />
-        <label htmlFor="rating3"><AiFillStar/><AiFillStar/><AiFillStar/><AiOutlineStar/><AiOutlineStar/> </label>
+        <label htmlFor="rating3"><AiFillStar className='checked'/><AiFillStar className='checked'/><AiFillStar className='checked'/><AiOutlineStar/><AiOutlineStar/> </label>
         </div>
       <div className='checkClass'>
         <input type="checkbox" name="rating2" id="rating2" />
-        <label htmlFor="rating2"><AiFillStar/><AiFillStar/><AiOutlineStar/><AiOutlineStar/><AiOutlineStar/> </label>
+        <label htmlFor="rating2"><AiFillStar className='checked'/><AiFillStar className='checked'/><AiOutlineStar/><AiOutlineStar/><AiOutlineStar/> </label>
         </div>
       <div className='checkClass'>
         <input type="checkbox" name="rating1" id="rating1" />
-        <label htmlFor="rating1"><AiFillStar/><AiOutlineStar/><AiOutlineStar/><AiOutlineStar/><AiOutlineStar/> </label>
+        <label htmlFor="rating1"><AiFillStar className='checked'/><AiOutlineStar/><AiOutlineStar/><AiOutlineStar/><AiOutlineStar/> </label>
         </div>
       </div>
     </div>

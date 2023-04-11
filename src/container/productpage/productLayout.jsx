@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { BiSearch } from "react-icons/bi";
 import Filter from "./components/filter";
 import ProductCard from "./components/productCard";
