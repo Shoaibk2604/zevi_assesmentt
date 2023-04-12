@@ -1,11 +1,9 @@
 import React from 'react'
-import outfit1 from '../../../Assests/model1.jpg'
-import outfit2 from '../../../Assests/model2.jpg'
-import outfit3 from '../../../Assests/model3.jpg'
+import outfit1 from '../../../Assests/model6.jpg'
+import outfit2 from '../../../Assests/model7.jpg'
+import outfit3 from '../../../Assests/model8.jpg'
 import outfit4 from '../../../Assests/model4.jpg'
-import outfit5 from '../../../Assests/model5.jpg'
-import outfit6 from '../../../Assests/model4.jpg'
-import { Link } from 'react-router-dom'
+import outfit5 from '../../../Assests/model9.jpg'
 const SuggestionBox = () => {
   return (
       <div className='sug-box-container '>

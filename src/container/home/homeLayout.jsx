@@ -4,9 +4,8 @@ import SuggestionBox from "./component/suggestionBox";
 function HomeLayout() {
   return (
     <div className="home-bg">
-      <div className="container">
+      <div className="home-container">
         <SearchBox />
-      <SuggestionBox />
       </div>
     </div>
   );
