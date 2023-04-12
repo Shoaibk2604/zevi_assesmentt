@@ -5,8 +5,9 @@ import outfit3 from "../../../Assests/model8.jpg";
 import outfit4 from "../../../Assests/model4.jpg";
 import outfit5 from "../../../Assests/model9.jpg";
 import { useNavigate } from "react-router";
+import { Link } from "react-router-dom";
 const SuggestionBox = () => {
-    const navigate = useNavigate();
+  const navigate = useNavigate();
   return (
     <div className="sug-box-container ">
       <div className="sug-box-wrapper">
@@ -16,39 +17,61 @@ const SuggestionBox = () => {
             <div className="row">
               <div className="col-md-2 product-five">
                 <div className="trending-outfit">
-                    <img src={outfit1} alt="" width={100} height="100%" onClick={()=>navigate("/productpage")}/>
+                  <img
+                    src={outfit1}
+                    alt=""
+                    width={100}
+                    height="100%"
+                    onClick={() => navigate("/productpage")}
+                  />
                 </div>
                 <h6 className="text-center">Trend 1</h6>
               </div>
               <div className="col-md-2 product-five">
                 <div className="trending-outfit">
-                  <a href="/productpage">
-                    <img src={outfit2} alt="" width={100} height="100%" />
-                  </a>
+                  <img
+                    src={outfit2}
+                    alt=""
+                    width={100}
+                    height="100%"
+                    onClick={() => navigate("/productpage")}
+                  />
                 </div>
                 <h6 className="text-center">Trend 2</h6>
               </div>
               <div className="col-md-2 product-five">
                 <div className="trending-outfit">
-                  <a href="/productpage">
-                    <img src={outfit3} alt="" width={100} height="100%" />
-                  </a>
+                  <img
+                    src={outfit3}
+                    alt=""
+                    width={100}
+                    height="100%"
+                    onClick={() => navigate("/productpage")}
+                  />
                 </div>
                 <h6 className="text-center">Trend 3</h6>
               </div>
               <div className="col-md-2 product-five">
                 <div className="trending-outfit">
-                  <a href="/productpage">
-                    <img src={outfit4} alt="" width={100} height="100%" />
-                  </a>
+                  <img
+                    src={outfit4}
+                    alt=""
+                    width={100}
+                    height="100%"
+                    onClick={() => navigate("/productpage")}
+                  />
                 </div>
                 <h6 className="text-center">Trend 1</h6>
               </div>
               <div className="col-md-2 product-five">
                 <div className="trending-outfit">
-                  <a href="/productpage">
-                    <img src={outfit5} alt="" width={100} height="100%" />
-                  </a>
+                  <img
+                    src={outfit5}
+                    alt=""
+                    width={100}
+                    height="100%"
+                    onClick={() => navigate("/productpage")}
+                  />
                 </div>
                 <h6 className="text-center">Trend 1</h6>
               </div>
@@ -58,34 +81,34 @@ const SuggestionBox = () => {
             <h5>Popular Suggestions</h5>
             <div className="outfit-title">
               <h6>
-                <a href="/productpage" className="link-title">
+                <Link to="/productpage" className="link-title">
                   {" "}
                   Striped shirt dress
-                </a>
+                </Link>
               </h6>
             </div>
             <div className="outfit-title">
               <h6>
-                <a href="/productpage" className="link-title">
+                <Link to="/productpage" className="link-title">
                   {" "}
                   Satin shirts
-                </a>
+                </Link>
               </h6>
             </div>
             <div className="outfit-title">
               <h6>
-                <a href="/productpage" className="link-title">
+                <Link to="/productpage" className="link-title">
                   {" "}
                   Denim jumpsuit
-                </a>
+                </Link>
               </h6>
             </div>
             <div className="outfit-title">
               <h6>
-                <a href="/productpage" className="link-title">
+                <Link to="/productpage" className="link-title">
                   {" "}
                   Leather Dresses
-                </a>
+                </Link>
               </h6>
             </div>
           </div>
