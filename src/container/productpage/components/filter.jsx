@@ -7,7 +7,7 @@ const Filter = () => {
   const { productData, orignalData } = useSelector((state) => state.product);
   const dispatch = useDispatch();
 
-  // filter function
+  // FILTER function
   const filterHandler = (e) => {
     if (e.target.value === "all") {
       dispatch(saveProductData(orignalData));
@@ -29,23 +29,34 @@ const Filter = () => {
   };
   const ratingHandle = (e) => {
     if (e.target.value == 5) {
-      const ratingData = orignalData.filter((item) => item.rating.rate == 5);
+      const ratingData = orignalData.filter(
+        (item) => Math.round(item.rating.rate) == 5
+      );
       dispatch(saveProductData(ratingData));
     } else if (e.target.value == 4) {
-      const ratingData = orignalData.filter((item) => item.rating.rate == 4);
+      const ratingData = orignalData.filter(
+        (item) => Math.round(item.rating.rate) == 4
+      );
       dispatch(saveProductData(ratingData));
     } else if (e.target.value == 3) {
-      const ratingData = orignalData.filter((item) => item.rating.rate == 3);
+      const ratingData = orignalData.filter(
+        (item) => Math.round(item.rating.rate) == 3
+      );
       dispatch(saveProductData(ratingData));
     } else if (e.target.value == 2) {
-      const ratingData = orignalData.filter((item) => item.rating.rate == 2);
+      const ratingData = orignalData.filter(
+        (item) => Math.round(item.rating.rate) == 2
+      );
       dispatch(saveProductData(ratingData));
     } else {
-      const ratingData = orignalData.filter((item) => item.rating.rate == 1);
+      const ratingData = orignalData.filter(
+        (item) => Math.round(item.rating.rate) == 1
+      );
       dispatch(saveProductData(ratingData));
     }
   };
 
+  // FILTER END
   return (
     <>
       <div className="accordion" id="accordionPanelsStayOpenExample">
@@ -78,6 +89,7 @@ const Filter = () => {
                   id="all"
                   value="all"
                   onChange={filterHandler}
+                  defaultChecked
                 />
                 <label htmlFor="all">ALL </label>
               </div>
