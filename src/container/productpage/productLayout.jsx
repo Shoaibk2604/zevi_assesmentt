@@ -18,14 +18,14 @@ const ProductLayout = () => {
   return (
     <div className="container">
       <div className="product-search">
-        <form class="d-flex">
+        <form className="d-flex">
           <input
-            class="form-control me-2"
+            className="form-control me-2"
             type="search"
             placeholder="Search"
             aria-label="Search"
           />
-          <button class="btn" type="submit">
+          <button className="btn" type="submit">
             {" "}
             <BiSearch />{" "}
           </button>
@@ -39,15 +39,14 @@ const ProductLayout = () => {
           </div>
           <div className="col-md-9">
             <div className="row">
-
-            {productData &&
-              productData.map((item, index) => {
-                return (
-                  <div className="col-md-3 only-product-three" key={item.id}> 
-                 <ProductCard item={item}  />;
-            </div>
-                  )
-              })}
+              {productData &&
+                productData.map((item, index) => {
+                  return (
+                    <div className="col-md-3 only-product-three" key={item.id}>
+                      <ProductCard item={item} />
+                    </div>
+                  );
+                })}
             </div>
           </div>
         </div>

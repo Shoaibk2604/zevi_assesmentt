@@ -28,36 +28,31 @@ const Filter = () => {
     }
   };
   const ratingHandle = (e) => {
-    if(e.target.value == 5){
-      const ratingData = orignalData.filter((item)=> item.rating.rate <= 5 )
+    if (e.target.value == 5) {
+      const ratingData = orignalData.filter((item) => item.rating.rate == 5);
+      dispatch(saveProductData(ratingData));
+    } else if (e.target.value == 4) {
+      const ratingData = orignalData.filter((item) => item.rating.rate == 4);
+      dispatch(saveProductData(ratingData));
+    } else if (e.target.value == 3) {
+      const ratingData = orignalData.filter((item) => item.rating.rate == 3);
+      dispatch(saveProductData(ratingData));
+    } else if (e.target.value == 2) {
+      const ratingData = orignalData.filter((item) => item.rating.rate == 2);
+      dispatch(saveProductData(ratingData));
+    } else {
+      const ratingData = orignalData.filter((item) => item.rating.rate == 1);
       dispatch(saveProductData(ratingData));
     }
-    else if(e.target.value == 4){
-      const ratingData = orignalData.filter((item)=> item.rating.rate <= 4 )
-        dispatch(saveProductData(ratingData));
-    }
-    else if(e.target.value == 3){
-      const ratingData = orignalData.filter((item)=> item.rating.rate <= 3 )
-      dispatch(saveProductData(ratingData));
-  }
-  else if(e.target.value == 2){
-    const ratingData = orignalData.filter((item)=> item.rating.rate <=2 )
-    dispatch(saveProductData(ratingData));
-  }
-  else{
-  const ratingData = orignalData.filter((item)=> item.rating.rate <=1 )
-  dispatch(saveProductData(ratingData));
-
-}
   };
 
   return (
     <>
-      <div class="accordion" id="accordionPanelsStayOpenExample">
-        <div class="accordion-item" style={{ border: "0px" }}>
-          <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+      <div className="accordion" id="accordionPanelsStayOpenExample">
+        <div className="accordion-item" style={{ border: "0px" }}>
+          <h2 className="accordion-header" id="panelsStayOpen-headingOne">
             <button
-              class="accordion-button"
+              className="accordion-button"
               type="button"
               data-bs-toggle="collapse"
               data-bs-target="#panelsStayOpen-collapseOne"
@@ -69,11 +64,11 @@ const Filter = () => {
           </h2>
           <div
             id="panelsStayOpen-collapseOne"
-            class="accordion-collapse collapse show"
+            className="accordion-collapse collapse show"
             aria-labelledby="panelsStayOpen-headingOne"
           >
             <div
-              class="accordion-body"
+              className="accordion-body"
               style={{ borderBottom: "0.1px solid lightgrey" }}
             >
               <div className="checkClass">
@@ -119,10 +114,10 @@ const Filter = () => {
             </div>
           </div>
         </div>
-        <div class="accordion-item" style={{ border: "0px" }}>
-          <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+        <div className="accordion-item" style={{ border: "0px" }}>
+          <h2 className="accordion-header" id="panelsStayOpen-headingTwo">
             <button
-              class="accordion-button collapsed"
+              className="accordion-button collapsed"
               type="button"
               data-bs-toggle="collapse"
               data-bs-target="#panelsStayOpen-collapseTwo"
@@ -134,11 +129,11 @@ const Filter = () => {
           </h2>
           <div
             id="panelsStayOpen-collapseTwo"
-            class="accordion-collapse collapse"
+            className="accordion-collapse collapse"
             aria-labelledby="panelsStayOpen-headingTwo"
           >
             <div
-              class="accordion-body"
+              className="accordion-body"
               style={{ borderBottom: "0.1px solid lightgrey" }}
             >
               <div className="checkClass">
@@ -164,10 +159,10 @@ const Filter = () => {
             </div>
           </div>
         </div>
-        <div class="accordion-item" style={{ border: "0px" }}>
-          <h2 class="accordion-header" id="panelsStayOpen-headingThree">
+        <div className="accordion-item" style={{ border: "0px" }}>
+          <h2 className="accordion-header" id="panelsStayOpen-headingThree">
             <button
-              class="accordion-button collapsed"
+              className="accordion-button collapsed"
               type="button"
               data-bs-toggle="collapse"
               data-bs-target="#panelsStayOpen-collapseThree"
@@ -179,39 +174,69 @@ const Filter = () => {
           </h2>
           <div
             id="panelsStayOpen-collapseThree"
-            class="accordion-collapse collapse"
+            className="accordion-collapse collapse"
             aria-labelledby="panelsStayOpen-headingThree"
           >
             <div
-              class="accordion-body"
+              className="accordion-body"
               style={{ borderBottom: "0.1px solid lightgrey" }}
             >
               <div className="checkClass">
-                <input type="radio" name="rate" id="rating5" value="5" onChange={ratingHandle}/>
+                <input
+                  type="radio"
+                  name="rate"
+                  id="rating5"
+                  value="5"
+                  onChange={ratingHandle}
+                />
                 <label htmlFor="rating5">
-                  <Rating name="read-only" value={5} readOnly  />
+                  <Rating name="read-only" value={5} readOnly />
                 </label>
               </div>
               <div className="checkClass">
-                <input type="radio" name="rate" id="rating4" value="4" onChange={ratingHandle}/>
+                <input
+                  type="radio"
+                  name="rate"
+                  id="rating4"
+                  value="4"
+                  onChange={ratingHandle}
+                />
                 <label htmlFor="rating4">
                   <Rating name="read-only" value={4} readOnly />
                 </label>
               </div>
               <div className="checkClass">
-                <input type="radio" name="rate" id="rating3" value="3" onChange={ratingHandle}/>
+                <input
+                  type="radio"
+                  name="rate"
+                  id="rating3"
+                  value="3"
+                  onChange={ratingHandle}
+                />
                 <label htmlFor="rating3">
                   <Rating name="read-only" value={3} readOnly />
                 </label>
               </div>
               <div className="checkClass">
-                <input type="radio" name="rate" id="rating2" value="2" onChange={ratingHandle}/>
+                <input
+                  type="radio"
+                  name="rate"
+                  id="rating2"
+                  value="2"
+                  onChange={ratingHandle}
+                />
                 <label htmlFor="rating2">
                   <Rating name="read-only" value={2} readOnly />
                 </label>
               </div>
               <div className="checkClass">
-                <input type="radio" name="rate" id="rating1" value="1" onChange={ratingHandle}/>
+                <input
+                  type="radio"
+                  name="rate"
+                  id="rating1"
+                  value="1"
+                  onChange={ratingHandle}
+                />
                 <label htmlFor="rating1">
                   <Rating name="read-only" value={1} readOnly />
                 </label>
